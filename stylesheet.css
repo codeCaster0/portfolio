@@ -1,7 +1,69 @@
 .bg-amarelo {
-    background-color : #ffc107
+    background-color: #ffc107;
 }
 
 .bg-cinza {
     background-color: rgb(107, 105, 105);
+}
+
+.tech-icons-wrapper {
+    padding: 20px;
+}
+
+.tech-icon {
+    max-height: 140px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.tech-icon:hover {
+    transform: scale(1.1);
+}
+
+
+.stack-text {
+    padding: 10px;
+}
+
+.stack-text .row {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+@media (max-width: 767.98px) {
+    .stack-text .row {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 15px;
+        padding-bottom: 10px;
+    }
+    
+    .stack-text .col-6 {
+        flex: 0 0 48%;
+        min-width: 0;
+        padding: 12px;
+        background-color: rgba(0,0,0,0.05);
+        border-radius: 8px;
+    }
+    
+    .tech-icons-wrapper {
+        display: none;
+    }
+    
+    .stack-text {
+        background-color: transparent;
+        padding: 15px 0;
+    }
+}
+
+.stack-text p {
+    margin-bottom: 0.8rem;
+    line-height: 1.5;
+}
+
+.stack-text h4 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
 }
